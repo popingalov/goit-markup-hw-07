@@ -19,23 +19,24 @@
 
 <body>
     <header class="header">
-        <div class="section">
+        <div class="section header__section--position">
             <nav class="nav">
 
                 <a href="./index.html" class="logo"><span class="logo-web">Web</span><span
                         class="logo-studio">Studio</span></a>
-                <ul class="menu">
-                    <li><a href="./index.html" class="current">Студия</a></li>
-                    <li><a href="./pages/portfolio.html">Портфолио</a></li>
-                    <li><a href="">Контакты</a></li>
+                <ul class="nav__menu">
+                    <li class="nav__list"><a href="./index.html" class="current nav__link">Студия</a></li>
+                    <li class="nav__list"><a href="./pages/portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li class="nav__list"><a href="" class="nav__link">Контакты</a></li>
                 </ul>
 
             </nav>
-            <a href="mailto:info@devstudio.com" class="telma-item">
-                <svg class="telma-icon" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="header__link">
+                <svg class="header__icon" width="16" height="12">
                     <use href="./icons/symbol-defs.svg#icon-envelope"></use>
                 </svg> info@devstudio.com</a>
-            <a href="tel:+380961111111" class="telma-item"><svg class="telma-icon" width="10" height="16">
+            <a href="tel:+380961111111" class="header__link">
+                <svg class="header__icon" width="10" height="16">
                     <use href="./icons/symbol-defs.svg#icon-smartphone"></use>
                 </svg> +38 096 111 11 11</a>
         </div>
@@ -44,36 +45,36 @@
         <div data-modal class="backdrop is-hidden">
             <div class="form-modal">
                 <form class="form">
-                    <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-                    <label for="form-name" class="form-name">
-                        <span class="form-name-position">Имя</span>
-                        <input type="text" id="form-name" class="prob input">
-                        <svg class="icon-form-man" width="12" height="12">
+                    <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+                    <label class="form__name">
+                        <span class="form__lablel-name">Имя</span>
+                        <input type="text" class="form__input">
+                        <svg class="form__icon" width="12" height="12">
                             <use href="./icons/symbol-defs.svg#icon-form-man"></use>
                         </svg>
                     </label>
-                    <label for="form-tel" class="form-tel">
-                        <span class="form-name-position">Телефон</span>
-                        <input type="tel" id="form-tel" class="prob input">
-                        <svg class="icon-form-man" width="13" height="13">
+                    <label class="form__tel">
+                        <span class="form__lablel-name">Телефон</span>
+                        <input type="tel" class="form__input">
+                        <svg class="form__icon" width="13" height="13">
                             <use href="./icons/symbol-defs.svg#icon-form-tel"></use>
                         </svg>
                     </label>
-                    <label for="form-email" class="form-email">
+                    <label class="form__email">
                         Почта
-                        <input type="email" autocomplete="on" id="form-email" class="prob input">
-                        <svg class="icon-form-man" width="15" height="12">
+                        <input type="email" autocomplete="on" class="form__input">
+                        <svg class="form__icon" width="15" height="12">
                             <use href="./icons/symbol-defs.svg#icon-form-email"></use>
                         </svg>
                     </label>
-                    <label for="form-text" class="form-text">
-                        <span class="form-name-position">Комментарий</span>
+                    <label for="form-text" class="form__text">
+                        <span class="form__lablel-name">Комментарий</span>
                         <textarea name="coment" id="form-text" placeholder="Введите текст" cols="30" rows="10"
-                            class="form-textarea prob"></textarea>
+                            class="form__textarea"></textarea>
 
                     </label>
-                    <label for="modal-policy" class="modal-policy">
-                        <input type="checkbox" id="modal-policy" class="checkbox">
+                    <label class="modal-policy">
+                        <input type="checkbox" class="checkbox">
                         <span class="icon-check"></span>
                         Соглашаюсь с рассылкой и принимаю
                         <a href="#" class="link-policy">Условия договора</a>
@@ -352,7 +353,7 @@
 
                 <ul>
                     <li> <a href="mailto:info@devstudio.com" rel="noreferrer noopener">info@devstudio.com</a> </li>
-                    <li><a href="tel:+380961111111" rel="noreferrer noopener">+38 096 111 11 11</a></li>
+                    <li> <a href="tel:+380961111111" rel="noreferrer noopener">+38 096 111 11 11</a></li>
                 </ul>
             </div>
             <div class="footer-soc">
