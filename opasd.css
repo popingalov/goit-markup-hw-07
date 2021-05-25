@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff)
+      format('woff'),
+    url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff2)
+      format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --main-text-cl: #555555;
+  --title-cl: #303030;
+  --accent-cl: #ff6c00;
+  --alt-text-cl: #9da4bd;
+  --alt-title-cl: #ffffff;
+
+  --dark-bg: #191c26;
+  --second-bg: #f7f7f7;
+
+  --main-font: 'Open Sans', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-text-cl);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}
+
+.list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.address {
+  font-style: inherit;
+}
+
+.menu {
+  display: inline-flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.socials-list {
+  display: flex;
+}
+
+.socials-item {
+  margin-left: 40px;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.btn {
+  min-width: 160px;
+  min-height: 40px;
+  padding: 12px 20px;
+  border: 1px solid var(--accent-cl);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--title-cl);
+  background-color: transparent;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--alt-title-cl);
+  background-color: var(--accent-cl);
+}
+
+.title {
+  font-family: var(--title-font);
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+/* .white-space {
+  white-space: nowrap;
+} */
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 72px;
+  line-height: 1.18;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.section-title {
+  margin-bottom: 44px;
+  font-size: 42px;
+  line-height: 1.17;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-box {
+  flex-basis: calc((100% - 30px) / 2);
+  /* background-color: #eee; */
+}
+
+.title-label {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--title-cl);
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header .btn {
+  margin-left: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.hero-content {
+  width: calc(100% / 12 * 5);
+}
+
+.team {
+  background-color: var(--second-bg);
+}
+
+.team-item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  text-align: center;
+}
+
+.team-item-name {
+  font-weight: 400;
+  line-height: 1.39;
+  color: var(--title-cl);
+}
+
+.team-item-position {
+  font-size: 14px;
+  line-height: 1.36;
+  color: var(--accent-cl);
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  text-align: center;
+}
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-bg {
+  background-color: var(--dark-bg);
+  color: var(--alt-text-cl);
+}
+
+.dark-bg .title,
+.dark-bg .btn {
+  color: var(--alt-title-cl);
+}
+
+.dark-bg .title-label {
+  color: var(--alt-text-cl);
+}
+
+.hero-section {
+  background: #2f303a;
+}
