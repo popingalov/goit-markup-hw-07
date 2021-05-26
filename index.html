@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -31,11 +31,11 @@
                 </ul>
 
             </nav>
-            <a href="mailto:info@devstudio.com" class="header__link">
+            <a href="mailto:info@devstudio.com" class="header__addres">
                 <svg class="header__icon" width="16" height="12">
                     <use href="./icons/symbol-defs.svg#icon-envelope"></use>
                 </svg> info@devstudio.com</a>
-            <a href="tel:+380961111111" class="header__link">
+            <a href="tel:+380961111111" class="header__addres">
                 <svg class="header__icon" width="10" height="16">
                     <use href="./icons/symbol-defs.svg#icon-smartphone"></use>
                 </svg> +38 096 111 11 11</a>
@@ -172,12 +172,12 @@
             <div class="section">
                 <h2 class="h2-title">Наша команда</h2>
 
-                <ul class="team">
-                    <li class="team-foto">
+                <ul class="card-set">
+                    <li class="card-set__element">
                         <img src="./images/team/igor.jpg" width="270" alt="Product Designer">
-                        <div class="team-hp">
-                            <h3 class="team__name">Игорь Демьяненко</h3>
-                            <p lang="en" class="team__p">Product Designer</p>
+                        <div class="card-set__filling">
+                            <h3 class="card-set__name">Игорь Демьяненко</h3>
+                            <p lang="en" class="card-set__p">Product Designer</p>
 
                             <ul class="soc-list">
                                 <li class="soc-list__item">
@@ -207,11 +207,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-foto">
+                    <li class="card-set__element">
                         <img src="./images/team/ol6ga.jpg" width="270" alt="Frontend Developer">
-                        <div class="team-hp">
-                            <h3 class="team__name">Ольга Репина</h3>
-                            <p lang="en" class="team__p">Frontend Developer</p>
+                        <div class="card-set__filling">
+                            <h3 class="card-set__name">Ольга Репина</h3>
+                            <p lang="en" class="card-set__p">Frontend Developer</p>
                             <ul class="soc-list">
                                 <li class="soc-list__item">
                                     <a href="#" class="soc-list__link" rel=" noreferrer noopener"><svg
@@ -241,11 +241,11 @@
                         </div>
 
                     </li>
-                    <li class="team-foto">
+                    <li class="card-set__element">
                         <img src="./images/team/nikolay.jpg" width="270" alt="Marketing">
-                        <div class="team-hp">
-                            <h3 class="team__name">Николай Тарасов</h3>
-                            <p lang="en" class="team__p">Marketing</p>
+                        <div class="card-set__filling">
+                            <h3 class="card-set__name">Николай Тарасов</h3>
+                            <p lang="en" class="card-set__p">Marketing</p>
                             <ul class="soc-list">
                                 <li class="soc-list__item">
                                     <a href="#" class="soc-list__link" rel="noreferrer noopener"><svg
@@ -274,11 +274,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-foto">
+                    <li class="card-set__element">
                         <img src="./images/team/mixaH9.jpg" width="270" alt="UI Designer">
-                        <div class="team-hp">
-                            <h3 class="team__name">Михаил Ермаков</h3>
-                            <p lang="en" class="team__p">UI Designer</p>
+                        <div class="card-set__filling">
+                            <h3 class="card-set__name">Михаил Ермаков</h3>
+                            <p lang="en" class="card-set__p">UI Designer</p>
                             <ul class="soc-list">
                                 <li class="soc-list__item">
                                     <a href="#" class="soc-list__link" rel="noreferrer noopener"><svg
@@ -352,18 +352,20 @@
             <div class="footer-addres">
 
                 <a href="./index.html" class="logo logo--position"><span class="logo__web">Web</span><span
-                        class="logo__studio">Studio</span></a>
+                        class="logo__studio logo__studio--color">Studio</span></a>
 
-                <address>
+                <address class="footer-adres__link">
                     <a href="https://goo.gl/maps/wHTxwDvzceps6cKY9" target="_blank" rel="noreferrer noopener"
-                        class="addres">г.Киев,пр-т
+                        class="footer-adres__link--color">г.Киев,пр-т
                         Леси Украинки, 26
                     </a>
                 </address>
 
                 <ul>
-                    <li> <a href="mailto:info@devstudio.com" rel="noreferrer noopener">info@devstudio.com</a> </li>
-                    <li> <a href="tel:+380961111111" rel="noreferrer noopener">+38 096 111 11 11</a></li>
+                    <li> <a href="mailto:info@devstudio.com" rel="noreferrer noopener"
+                            class="footer__link">info@devstudio.com</a> </li>
+                    <li> <a href="tel:+380961111111" rel="noreferrer noopener" class="footer__link">+38 096 111 11
+                            11</a></li>
                 </ul>
             </div>
             <div class="footer-soc">
