@@ -624,12 +624,12 @@ a:hover {
   flex-basis: calc((100% - 30px * var(--team-foto)) / var(--team-foto));
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.services-card-set__link:hover,
+.services-card-set__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link {
+.services-card-set__link {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -658,7 +658,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.services-item:hover .p-block {
+.services-card-set__item:hover .p-block {
   transform: translateY(0);
 }
 
@@ -686,7 +686,7 @@ a:hover {
   padding-bottom: 94px;
 }
 
-.services-ll {
+.services-card-set {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
