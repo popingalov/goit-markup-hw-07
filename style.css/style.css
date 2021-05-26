@@ -154,7 +154,7 @@ button:hover {
 .exit:focus,
 .exit:hover {
   border-radius: 50%;
-  color: #2196f3;
+  fill: #2196f3;
   background-color: white;
 }
 footer a {
@@ -245,6 +245,9 @@ footer .logo-studio {
 .exit {
   top: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 8px;
   margin-top: 8px;
   position: fixed;
@@ -764,6 +767,7 @@ ul {
 
 .form__tel {
   position: relative;
+  margin-bottom: 10px;
 }
 .form__email {
   position: relative;
