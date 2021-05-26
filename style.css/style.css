@@ -850,19 +850,6 @@ label span {
   margin-bottom: 30px;
 }
 
-/* .checkbox::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--heading-text-color);
-  border-radius: 3px;
-  margin-right: 8px;
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
