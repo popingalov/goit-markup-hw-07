@@ -34,3 +34,17 @@
   margin-right: 12px;
   padding-left: 16px;
 }
+.footer-addres {
+  margin-right: 70px;
+}
+.footer-adres__link {
+  font-family: var(--hero-font);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+.footer-adres__link--color {
+  color: var(--background-header);
+}
